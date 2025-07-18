@@ -1,6 +1,6 @@
 #include "dongle.dtsi"
 
-    kscan0 {
+kscan0 {
         row-gpios
             = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
