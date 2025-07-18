@@ -4,6 +4,15 @@
 	col-offset = <10>;
 };
 
+&uart0 {
+	status = "disabled";
+};
+
+zephyr_udc0: &usbd {
+    compatible = "nordic,nrf-usbd";
+    status = "okay";
+};
+
     kscan0: kscan {
         row-gpios
             = <&gpio1 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
