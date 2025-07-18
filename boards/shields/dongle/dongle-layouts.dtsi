@@ -9,7 +9,7 @@
 };
 
 / {
-    physical_layout0: physical_layout_0 {
+    dongle_layout: dongle_layout {
         compatible = "zmk,physical-layout";
         display-name = "dongle";
         kscan = <&kscan0>;
