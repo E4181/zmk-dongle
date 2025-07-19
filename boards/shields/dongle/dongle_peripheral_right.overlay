@@ -4,7 +4,16 @@
 	col-offset = <5>;
 };
 
-&kscan0 {
+/ {
+    chosen {
+        zmk,kscan = &kscan;
+        zephyr,display = &oled;
+    };
+
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "col2row";
         row-gpios
             = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -19,4 +28,4 @@
             , <&gpio0 24 GPIO_ACTIVE_HIGH>
             ;
     };
-
+};

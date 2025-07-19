@@ -23,10 +23,11 @@ zephyr_udc0: &usbd {
 
 / {
     chosen {
+        zmk,kscan = &kscan;
         zephyr,display = &oled;
     };
 
-    kscan0 {
+    kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
         diode-direction = "col2row";
