@@ -26,7 +26,7 @@ zephyr_udc0: &usbd {
         zephyr,display = &oled;
     };
 
-&kscan0 {
+    &kscan0 {
         row-gpios
             = <&gpio1 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -38,7 +38,7 @@ zephyr_udc0: &usbd {
             , <&gpio0 9 GPIO_ACTIVE_HIGH>
             ;
     };
-}
+};
 
 &pinctrl {
 //for oled
