@@ -12,7 +12,7 @@
     dongle_layout: dongle_layout {
         compatible = "zmk,physical-layout";
         display-name = "dongle";
-        kscan = <&kscan0>;
+        kscan = <&kscan>;
         transform = <&matrix_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
