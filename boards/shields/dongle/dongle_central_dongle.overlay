@@ -60,6 +60,20 @@ zephyr_udc0: &usbd {
             low-power-enable;
         };
     };
+
+//for ws2812
+    spi3_default: spi3_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>; 
+        };
+    };
+
+    spi3_sleep: spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
+            low-power-enable;
+        };
+    };
 };
 
 //oled
@@ -88,6 +102,7 @@ zephyr_udc0: &usbd {
 	};
 };
 
+
 / {
     aliases {
         led-red = &led0;
@@ -109,3 +124,5 @@ zephyr_udc0: &usbd {
         };
     };
 };
+
+
