@@ -21,6 +21,7 @@ zephyr_udc0: &usbd {
     status = "okay";
 };
 
+/ {
     chosen {
         zephyr,display = &oled;
     };
@@ -37,6 +38,7 @@ zephyr_udc0: &usbd {
             , <&gpio0 9 GPIO_ACTIVE_HIGH>
             ;
     };
+};
 
 &pinctrl {
 //for oled
