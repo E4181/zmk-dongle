@@ -27,7 +27,7 @@
 &spi0 {
 	compatible = "nordic,nrf-spim";
 	status = "disabled"; // <<< disabled in main .dtsi, okay in .overlay
-	pd0: pd@0 {
+	pd1: pd@0 {
 		compatible = "pixart,pmw3610";
 		status = "disabled";
 		label = "TRACKBALL0";
