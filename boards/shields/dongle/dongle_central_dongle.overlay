@@ -1,18 +1,8 @@
 #include "dongle.dtsi"
-#include "trackball.dtsi"
 #include <dt-bindings/led/led.h>
 
 &default_transform {
 	col-offset = <10>;
-};
-
-&uart0 {
-	status = "disabled";
-};
-
-zephyr_udc0: &usbd {
-    compatible = "nordic,nrf-usbd";
-    status = "okay";
 };
 
 &first_encoder {
@@ -20,10 +10,6 @@ zephyr_udc0: &usbd {
 };
 
 &second_encoder {
-    status = "okay";
-};
-
-&trackball_listener {
     status = "okay";
 };
 
