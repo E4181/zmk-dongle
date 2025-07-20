@@ -72,7 +72,3 @@
                          LED_COLOR_ID_BLUE>;
     };
 };
-
-&trackball_listener {
-    status = "okay";
-};
