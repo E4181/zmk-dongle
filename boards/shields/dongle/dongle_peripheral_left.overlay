@@ -4,6 +4,15 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+&uart0 {
+	status = "disabled";
+};
+
+zephyr_udc0: &usbd {
+    compatible = "nordic,nrf-usbd";
+    status = "okay";
+};
+
 / {
     chosen {
         zmk,kscan = &kscan;
