@@ -10,6 +10,7 @@ features:
   - studio
   - underglow
   - display
+  - pointer
 siblings:
   - dongle_left
   - dongle_right
