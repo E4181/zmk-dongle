@@ -115,3 +115,10 @@ zephyr_udc0: &usbd {
 		relay-channel = <102>;
 	};
 };
+
+/{
+  trackball_listener { 
+    compatible = "zmk,input-listener";
+    device = <&pd1>;
+  };
+};
