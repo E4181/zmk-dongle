@@ -13,17 +13,16 @@ if SHIELD_DONGLE_CENTRAL_DONGLE || SHIELD_DONGLE_CENTRAL_LEFT || SHIELD_DONGLE_P
 
 config ZMK_SPLIT
     default y
+config ZMK_POINTING
+    default y
 
 endif
 
 if SHIELD_DONGLE_PERIPHERAL_LEFT
 
-config ZMK_POINTING
-    default y
-
 config SPI
     default y
-
+    
 endif
 
 # Set this to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + your desired number of BT profiles (default is 5)
