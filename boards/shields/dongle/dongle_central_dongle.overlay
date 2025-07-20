@@ -22,10 +22,6 @@ zephyr_udc0: &usbd {
     status = "okay";
 };
 
-&trackball_listener {
-    status = "okay";
-};
-
 / {
     chosen {
         zmk,kscan = &kscan;
