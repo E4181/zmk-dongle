@@ -20,21 +20,18 @@ zephyr_udc0: &usbd {
         zmk,underglow = &led_strip;
     };
 
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
+	/* assign `input-listener` to all pointing devices */
+	/* &pd0 on central, &pd1 on peripheral */
 
-        trackball_split: trackball_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-        };
-    };
+        trackball_central_listener {
+                compatible = "zmk,input-listener";
+                device = <&pd0>;
+	};
 
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackball_split>;
-    };
+        trackball_peripheral_listener {
+                compatible = "zmk,input-listener";
+                device = <&pd1>;
+	};
 
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
