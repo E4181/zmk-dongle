@@ -12,5 +12,5 @@ features:
   - display
   - pointer
 siblings:
-  - dongle_left
-  - dongle_right
+  - dongle_peripheral_left
+  - dongle_peripheral_right
