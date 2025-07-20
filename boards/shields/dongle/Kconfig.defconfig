@@ -16,6 +16,11 @@ config ZMK_SPLIT
 
 endif
 
+if SHIELD_DONGLE_PERIPHERAL_LEFT
+config SPI
+    default y
+endif
+
 # Set this to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + your desired number of BT profiles (default is 5)
 config BT_MAX_CONN
     default 6
