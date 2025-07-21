@@ -27,22 +27,21 @@
         compatible = "alps,ec11";
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
-        status = "okay";
+        resolution = <4>;
+		status = "disabled";
     };
 
     second_encoder: second_encoder {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
-        status = "okay";
+        resolution = <4>;
+		status = "disabled";
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&first_encoder &second_encoder>;
-        triggers-per-rotation = <20>;
     };
 
 };
