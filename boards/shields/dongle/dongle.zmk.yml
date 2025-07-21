@@ -10,6 +10,7 @@ features:
   - studio
   - underglow
   - display
+  - encoder
 siblings:
   - dongle_peripheral_left
   - dongle_peripheral_right
