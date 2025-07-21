@@ -79,10 +79,10 @@
 	pinctrl-names = "default", "sleep";
     
 	oled: sh1106@3c {
-        width = <130>;
+        width = <129>;
 		height = <64>;
         compatible = "sinowealth,sh1106";  //for 1.3寸sh1106
-        segment-offset = <2>;   //2 for sh1106
+        segment-offset = <1>;   //2 for sh1106
         multiplex-ratio = <63>; 
         com-sequential; //1.30
         label = "DISPLAY";
