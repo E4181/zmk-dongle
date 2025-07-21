@@ -78,15 +78,15 @@
 	pinctrl-1 = <&i2c1_sleep>;
 	pinctrl-names = "default", "sleep";
     
-	oled: ssd1306@3c {
+	oled: sh1106@3c {
         width = <128>;
 		height = <64>;
-        compatible = "solomon,ssd1306fb"; //for ssd1306
-        //compatible = "sinowealth,sh1106";  //for 1.3寸sh1106
+        //compatible = "solomon,ssd1306fb"; //for ssd1306
+        compatible = "sinowealth,sh1106";  //for 1.3寸sh1106
         #segment-offset = <0>; //0 for ssd1306
         segment-offset = <2>;   //2 for sh1106
         multiplex-ratio = <63>; 
-        //com-sequential; //1.30
+        com-sequential; //1.30
         label = "DISPLAY";
 		reg = <0x3c>;
 		page-offset = <0>;
