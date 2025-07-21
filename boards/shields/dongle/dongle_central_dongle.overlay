@@ -2,7 +2,7 @@
 #include <dt-bindings/led/led.h>
 
 &default_transform {
-	col-offset = <10>;
+	col-offset = <5>;
 };
 
 &first_encoder {
