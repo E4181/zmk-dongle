@@ -6,40 +6,40 @@ layers:
   - E
   - R
   - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Y
   - U
   - I
   - O
   - P
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - A
   - S
   - D
   - F
   - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - H
   - I
   - J
   - K
   - L
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Z
   - X
   - C
   - V
   - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
   - .
   - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - LEFT ALT
   - SPACE
   - SPACE
@@ -64,13 +64,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - RGB EFF
   - RGB TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&ind_bat'
   - '&ind_con'
   - {t: ▽, type: trans}
