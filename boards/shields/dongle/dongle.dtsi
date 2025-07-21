@@ -23,7 +23,7 @@
 		>;
 	};
 
-    first_encoder: encoder_left {
+    first_encoder: first_encoder {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -31,7 +31,7 @@
         status = "okay";
     };
 
-    second_encoder: encoder_right {
+    second_encoder: second_encoder {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
