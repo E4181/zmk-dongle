@@ -11,6 +11,7 @@ features:
   - underglow
   - display
   - encoder
+  - pointer
 siblings:
   - dongle_peripheral_left
   - dongle_peripheral_right

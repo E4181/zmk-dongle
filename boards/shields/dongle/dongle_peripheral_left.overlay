@@ -1,5 +1,18 @@
 #include "dongle.dtsi"
+#include "trackball.dtsi"
 #include <dt-bindings/led/led.h>
+
+&spi0 {
+    status = "okay";
+};
+
+&trackball {
+    status = "okay";
+};
+
+&trackball_split {
+    device = <&trackball>;
+};
 
 / {
     chosen {

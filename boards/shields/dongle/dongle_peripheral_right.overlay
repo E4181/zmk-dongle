@@ -1,8 +1,12 @@
 #include "dongle.dtsi"
+#include "trackball.dtsi"
 #include <dt-bindings/led/led.h>
 
 &default_transform {
 	col-offset = <9>;
+};
+&trackball_split {
+    status = "disabled";
 };
 
 / {
