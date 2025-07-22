@@ -40,7 +40,6 @@
 };
     &trackball_listener {
         status = "okay";
-        input-processors = <&zip_temp_layer 4 500>;
   };
 
 &pinctrl {

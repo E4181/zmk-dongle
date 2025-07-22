@@ -39,13 +39,13 @@
 //for ws2812
     spi3_default: spi3_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 24)>; //or p0.06
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>;
         };
     };
 
     spi3_sleep: spi3_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 24)>; //or p0.06
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>;
             low-power-enable;
         };
     };
